@@ -8,14 +8,25 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    &__text {
+        flex: 1;
+        margin-left: 10%;  
+    }
+    &__img {
+        flex: 1;
+        margin-right: 10%; 
+    }
 }
 
-.about__text {
-    flex: 1;
-    margin-left: 10%;  
-}
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)), 
+    url(../img/nat-4.jpg);
+    background-size: cover;
+    margin-top: -20vh;
 
-.about__img {
-    flex: 1;
-    margin-right: 10%; 
+    clip-path: polygon(0 10%, 5% 5%, 15% 0%, 20% 5%, 25% 6%, 30% 9%, 35% 9%, 40% 10%, 50% 5%, 55% 6%, 58% 5%, 65% 7%, 80% 2%, 90% 0, 100% 5%, 100% 95%, 90% 90%,80% 93%, 65% 98%, 58% 95%, 55% 96%, 50% 95%, 40% 100%, 35% 99%, 30% 99%, 25% 96%, 20% 95%, 15% 90%, 5% 95%, 0 100%);
 }
